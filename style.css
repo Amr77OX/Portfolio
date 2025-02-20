@@ -350,6 +350,21 @@ article .icon {
 
 #projects {
   position: relative;
+  padding: 20px; /* optional for spacing */
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards on large screens */
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.card {
+  background-color: rgb(250, 250, 250);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .color-container {
@@ -361,18 +376,28 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  object-fit: cover;
 }
 
 .project-title {
   margin: 1rem;
   color: black;
+  font-size: 1.25rem;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background: none;
+  cursor: pointer;
 }
 
+.project-btn:hover {
+  background-color: rgb(163, 163, 163);
+  color: white;
+}
 /*  CONTACT */
 
 #contact {

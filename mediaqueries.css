@@ -97,3 +97,33 @@
     text-align: justify;
   }
 }
+
+/* Media Queries */
+
+/* For large screens */
+@media screen and (min-width: 1200px) {
+  .project-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in large */
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in medium */
+  }
+}
+
+/* For Xsmall screens */
+@media screen and (max-width: 953px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards in medium */
+  }
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+  .project-container {
+    grid-template-columns: 1fr; /* 1 card in small */
+  }
+}
