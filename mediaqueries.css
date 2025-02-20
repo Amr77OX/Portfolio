@@ -127,3 +127,24 @@
     grid-template-columns: 1fr; /* 1 card in small */
   }
 }
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  90% {
+    width: 22ch; /* Typing completes at 90% */
+  }
+  100% {
+    width: 22ch; /* Keep the text visible */
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black; /* Blinking effect */
+  }
+}
